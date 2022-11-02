@@ -178,7 +178,6 @@ const styles = StyleSheet.create({
 
     },
     discoverItemTitle:{
-        fontFamily:'Lato-Bold',
         fontSize:18,
         color : colors.white
     },
