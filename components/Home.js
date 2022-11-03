@@ -10,6 +10,7 @@ import { FlatList, ScrollView, TextInput, TouchableOpacity } from "react-native-
 import { SafeAreaView } from "react-native-safe-area-context";
 import monkey from "../assets/images/monkey.png"
 import Entypo from 'react-native-vector-icons/Entypo'
+import accountData from '../assets/data/accountData'
 
 Feather.loadFont()
 
@@ -71,7 +72,10 @@ const Home = ({navigation})=> {
                                     }}
                             placeholder='Search'
                             textAlign='center'/>
-                       <Image source={monkey} style={styles.profileImage}/>
+                            <TouchableOpacity onPress={()=>navigation.navigate('Profile')}>
+                            <Image source={accountData.profilePicture} style={styles.profileImage}/>
+                            </TouchableOpacity>
+                       
                     </View>
                 </SafeAreaView>
 
